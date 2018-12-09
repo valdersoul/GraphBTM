@@ -114,7 +114,6 @@ def make_data():
         with open(biterm_file_name, 'rb') as f:
             biterms = pickle.load(f, encoding='bytes')
     else:
-        biterms = np.array(biterms)
         print('generating biterm graphs')
         make_biterm(data_tr, biterms)
     biterms = np.array(biterms)
